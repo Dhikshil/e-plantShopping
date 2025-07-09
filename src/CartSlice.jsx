@@ -27,6 +27,7 @@ export const CartSlice = createSlice({
     },
   },
 });
+dispatch(updateQuantity({ name: item.name, quantity: item.quantity + 1 }));
 
 export const { addItem, removeItem, updateQuantity } = CartSlice.actions;
 

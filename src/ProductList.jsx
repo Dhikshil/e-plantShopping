@@ -251,8 +251,15 @@ function ProductList({ onHomeClick }) {
     const handleContinueShopping = (e) => {
         e.preventDefault();
         setShowCart(false);
+        onContinueShopping(e)
     };
     const [addedToCart, setAddedToCart] = useState({});
+    
+    const handleCheckoutShopping = (e) => {
+    alert('Functionality to be added for future reference');
+        };
+
+
 
     const handleAddToCart = (product) => {
         dispatch(addItem(product)); 
